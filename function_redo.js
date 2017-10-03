@@ -16,7 +16,7 @@ function getThreshold(releases) {
         });
 
         var sortedPerYear = releasesForYear.sort(function (r1, r2) {
-            return r1.avgRating > r2.avgRating;
+            return r1.avgRating - r2.avgRating;
         });
 
         var topRelease = sortedPerYear[sortedPerYear.length - 1];
@@ -28,7 +28,7 @@ function getThreshold(releases) {
     return highestPerYear.sort()[0];
 }
 
-var getPoints = function (release) {
+function getPoints(release) {
     var threshold = getThreshold(releases) - 0.005;
     var pointsRaw = (release.avgRating - threshold) * 100;
     if (pointsRaw > 0) {
@@ -37,9 +37,4 @@ var getPoints = function (release) {
     else {
         return Math.floor(pointsRaw);
     }
-};
-
-// sort by ratingCount
-// sort by avgRating
-/* avgRating = 3.38 */
-/* avgRating = 3.37 */
+}
