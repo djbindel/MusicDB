@@ -1,0 +1,22 @@
+{
+  "name": "musicdb.frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djbindel/MusicDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djbindel/MusicDB/issues"
+  },
+  "homepage": "https://github.com/djbindel/MusicDB#readme",
+  "dependencies": {
+    "requirejs": "^2.3.5"
+  }
+}

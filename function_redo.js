@@ -28,7 +28,7 @@ function getThreshold(releases) {
     return highestPerYear.sort()[0];
 }
 
-function getPoints(release) {
+function getPoints(release, releases) {
     var threshold = getThreshold(releases) - 0.005;
     var pointsRaw = (release.avgRating - threshold) * 100;
     if (pointsRaw > 0) {
