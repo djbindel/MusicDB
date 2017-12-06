@@ -1,81 +1,89 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-    <title>Hello HTML</title>
-    <meta name="Author" content="Daniel Bindel"/>
-    <meta name="Description" content="Sample for HTML course"/>
-    <meta name="Keywords" content="Sample, HTML"/>
-    <meta charset="utf-8"/>
-
-    <!--
-    <script type="text/javascript">
-        window.onload = function(){
-            alert("window loaded");
-        };
-    </script>
-    -->
-
-    <style type="text/css">
-        body {color:red}
-    </style>
-
-    <!--
-    <base href="http://www.google.com/"/>
-    -->
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
-</head>
-
-<body>
-    <h1>HTML Fundamentals</h1>
-    <h2>Overview</h2>
-        <div id="overviewContainer">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    <h3>Objectives</h3>
-        <ul class="withSquare">
-            <li>Explain the fundamental concepts of HTML</li>
-            <li>Have fun creating
-                <ul type="disc">
-                    <li>documents</li>
-                    <li>memories</li>
-                </ul>
-            </li>
-            <li>Mark it up!</li>
-        </ul>
-    <h3>Outline</h3>
-        <ol type="A">
-            <li>Introduction</li>
-            <li>Text elements</li>
-            <li>Lists
-                <ol type="a">
-                    <li>Unordered lists</li>
-                    <li>Ordered lists</li>
-                    <li>Definition lists</li>
-                </ol>
-            </li>
-            <li>Links</li>
-        </ol>
-
-    <div id="secondDiv">This is another div</div>
-    <hr/>
-    <pre>
+    <head>
+        <title>Hello HTML</title>
+        <meta name="Author" content="Daniel Bindel"/>
+        <meta name="Description" content="Sample for HTML course"/>
+        <meta name="Keywords" content="Sample, HTML"/>
+        <meta charset="utf-8"/>
+        <!--
+        <script>
+            window.onload = function(){
+                alert("window loaded");
+            };
+        </script>
+        -->
+        <style>
+            body {color:red}
+        </style>
+        <!--
+        <base href="http://www.google.com/"/>
+        -->
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+    <body>
+        <header>
+            <nav></nav>
+        </header>
+        <main>
+            <details>
+                <summary>HTML Fundamentals</summary>
+                <h2>Overview</h2>
+                    <div id="overviewContainer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <figure>
+                        <img src="Radiohead.jpg"/>
+                        <figcaption>A picture of the band Radiohead</figcaption>
+                    </figure>
+                <h3>Objectives</h3>
+                    <ul class="withSquare">
+                        <li>Explain the fundamental concepts of HTML</li>
+                        <li>Have fun creating
+                            <ul type="disc">
+                                <li>documents</li>
+                                <li>memories</li>
+                            </ul>
+                        </li>
+                        <li>Mark it up!</li>
+                    </ul>
+                <h3>Outline</h3>
+                    <ol type="A">
+                        <li>Introduction</li>
+                        <li>Text elements</li>
+                        <li>Lists
+                            <ol type="a">
+                                <li>Unordered lists</li>
+                                <li>Ordered lists</li>
+                                <li>Definition lists</li>
+                            </ol>
+                        </li>
+                        <li>Links</li>
+                    </ol>
+            </details>
+            <article>
+                <aside>
+                    <hr/>
+                    <pre>
 This is a haiku
 A boring haiku for you
 This is a haiku
-    </pre>
-    <hr/>
-
-    <h2>Terminology</h2>
-        <dl>
-            <dt>HTML</dt>
-            <dd>HyperText Markup Link</dd>
-            <dt>HTTP</dt>
-            <dd>HyperText Transfer Protocol</dd>
-        </dl>
-    <span>first span</span> <br/>
-    <span>second span</span>
-</body>
-
+                    </pre>
+                    <hr/>
+                </aside>
+                <h2>Terminology</h2>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>HyperText Markup Link</dd>
+                        <dt>HTTP</dt>
+                        <dd>HyperText Transfer Protocol</dd>
+                    </dl>
+                <span>first span</span> <br/>
+                <span>second span</span>
+            </article>
+        </main>
+        <footer>
+            <nav></nav>
+        </footer>
+    </body>
 </html>
