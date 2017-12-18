@@ -3,6 +3,18 @@
 
 	<head>
 		<link rel="stylesheet" href="styles.css">
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+			crossorigin="anonymous">
+		</script>
+		<script src="require.js"></script>
+		<script src="function.js"></script>
+		<!--script src="database.js"></script-->
+		<script src="initialize.js"></script>
+
+		<!-- <script src="jquery.sortElements.js"></script> -->
+		<!-- <script src="sortElement.js"></script> -->
 	</head>
 
 	<body>
@@ -13,7 +25,7 @@
 					<th></th>
 					<th>Artist</th>
 					<th>#</th>
-					<th>Release</th>
+					<th>Title</th>
 					<th>Year</th>
 					<th class="points">Score</th>
 				</tr>
@@ -21,19 +33,18 @@
 			<tbody>
 			</tbody>
 		</table>
+		<form class="addRelease">
+			<fieldset>
+				<legend>New Album Info:</legend>
+				Artwork: <input type="url"><br>
+				Artist: <input type="text"><br>
+				#: <input type="text"><br>
+				Title: <input type="text"><br>
+				Year: <input type="text">
+			</fieldset>
+			Save to Database? <input type=checkbox>
+			<button type="submit">Submit</button>
+		</form>
 	</body>
-
-	<script
-		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-		crossorigin="anonymous">
-	</script>
-	<script src="require.js"></script>
-	<script src="function_redo.js"></script>
-	<!-- <script src="database.js"></script> -->
-	<script src="initialize_redo.js"></script>
-
-	<!-- <script src="jquery.sortElements.js"></script> -->
-	<!-- <script src="sortElement.js"></script> -->
 
 </html>
