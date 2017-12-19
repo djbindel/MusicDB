@@ -33,7 +33,7 @@
 			<tbody>
 			</tbody>
 		</table>
-		<form class="addRelease">
+		<form action="/albums" method="POST" class="addRelease">
 			<fieldset>
 				<legend>New Album Info:</legend>
 				Artwork: <input type="url"><br>
@@ -44,6 +44,9 @@
 			</fieldset>
 			Save to Database? <input type=checkbox>
 			<button type="submit">Submit</button>
+		</form>
+		<form action="/albums" method="GET">
+			<button type="submit">Result</button>
 		</form>
 	</body>
 
